@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="mainHeader">
+        <section id="navbar">  
+            <nav >
+
+                <!-- Barre de navigation mobile -->
+                <ul class="sideBar">
+                    <li onclick="hideSidebar ()" class="nav-item">
+                        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#008000"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/></svg></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-title">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mes_projets">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mes_competences">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#form-section">Contact</a>
+                    </li>
+                </ul>
+
+
+                <!-- Navbar Desktop -->
+
+                <ul class="nav justify-content-end">
+                    <li >
+                        <a class="nav-link" href="#">Zouti<strong class="Highlight"> Dijital</strong></a>
+                    </li>
+                    <li class="hideOnMobile">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="hideOnMobile">
+                        <a class="nav-link" href="#about-title">À propos</a>
+                    </li>
+                    <li class="hideOnMobile">
+                        <a class="nav-link" href="#mes_projets">Projets</a>
+                    </li>
+                    <li class="hideOnMobile">
+                        <a class="nav-link" href="#mes_competences">Compétences</a>
+                    </li>
+                    <li class="hideOnMobile">
+                        <a class="nav-link" href="#form-section">Contact</a>
+                    </li>
+                    <li class="menu-button" onclick="showSidebar ()">
+                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#ffff"><path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>    
+    </header>
+
+    <main>
+        <section id="project-content">
+            <div class="text-content">
+                <h2>Je suis <strong class="Highlight">Kevens Marly</strong>, Développeur Web Full-Stack Junior<br> des technologies Web</h2>
+                <button type="button" id="btn-project" class="btn btn-success"> Découvrez mes projets</button>
+            </div>
+            <div class="img-contenu">
+                <img src="/images_fichiers/prog_web.webp" alt="Image de codage" height="300px">
+            </div>
+        </section>
+
+        <!-- Début de la section À propos -->
+
+
+        <section id="section-content">
+                
+                <div>
+                    <h1 id="about-title"> À propos <br></h1>
+                </div>
+            <div id="about-content">
+
+                <div class="text-about">
+                    <p class="apropos">Je suis <strong class="Highlight">Kevens Marly</strong>, développeur web junior en apprentissage, passionné par la création de sites modernes et intuitifs.</p>
+
+                    <p class="apropos">
+                        Je travaille quotidiennement sur mes compétences en <strong class="Highlight">HTML, CSS et JavaScript</strong> et découvre les frameworks comme <strong class="Highlight">Wordpress, Laravel</strong> pour construire des projets concrets et fonctionnels.
+                    </p>
+
+                    <p class="apropos">
+                        Curieux et motivé, j’aime relever des défis et apprendre en continu. Mon objectif est de transformer mes connaissances en solutions réelles.
+                    </p>
+                    <a href="images_fichiers/CV_Pierrette_Kevens_Marly.pdf" target="_blank">
+                        <button id="btn-cv" type="button" class="btn btn-success"> Télecharger mon CV </button>
+                    </a>
+                </div>
+
+                <div class="img-content">
+                    <img src="images_fichiers/Kevens.jpg" alt="Kevens Marly" height="200px">
+                </div>    
+            </div>
+        </section>
+
+                        <!-- Début de la section "Mes projets" -->
+
+        <section class="realisation-content" id="mes_projets">
+
+            <div>
+                    <h1 id="realisation-title">Réalisations <br></h1>
+            </div>
+
+            <div id="project-contenu">
+
+                <section id="box-1">
+                    <p>Un minuteur qui s'actualise toutes les secondes comme une horloge</p>
+                    <p>#HTML, #CSS, #JS</p>
+                    <a href="/mes_projets/temps_reel.html" target="_blank"><button id="btn-box1" type="button" class="btn btn-success">Découvrir ...</button></a>
+                </section>
+
+                <section id="box-2">
+                    <p>Un programme JavaScript qui calcule la racine carrée d'un nombre</p>
+                     <p>#HTML, #CSS, #JS</p>
+                    <a href="/mes_projets/exercise2.html" target="_blank">
+                        <button id="btn-box2" type="button" class="btn btn-success" >Découvrir ...</button>
+                    </a>
+                </section>
+
+                <section id="box-3">
+                    <p>Un calculateur qui calcule précisement le montant d'un prêt hypothécaire</p>
+                     <p>#HTML, #CSS, #JS</p>
+                    <a href="/mes_projets/calculateur.html" target="_blank">
+                        <button id="btn-box3" type="button" class="btn btn-success">Découvrir ...</button>
+                    </a>
+                </section>
+            </div>
+
+        </section>
+                        <!-- Début de la section "Mes compétences" -->
+
+        <section class="competence-content" id="mes_competences">
+
+            <div>
+                    <h1 id="competence-title">Compétences <br></h1>
+            </div>
+
+            <div id="competence-contenu">
+
+                <section id="box-4">
+                    <h1 style="font-size: 20pt;">Front-End</h1>
+                    <p>Algorithme</p>
+                    <progress value="70" max="100"></progress>
+
+                    <p>HTML</p>
+                    <progress value="90" max="100"></progress>
+
+                    <p>CSS</p>
+                    <progress value="90" max="100"></progress>
+
+                    <p>JavaScript</p>
+                    <progress value="60" max="100"></progress>
+                </section>
+
+                <section id="box-5">
+                    <h1 style="font-size: 20pt;">Back-End</h1>
+                    <p>PHP</p>
+                    <progress value="80" max="100"></progress>
+
+                    <p>Laravel</p>
+                    <progress value="50" max="100"></progress>
+
+                    <p>Node.js</p>
+                    <progress value="40" max="100"></progress>
+
+                    <p>Sql</p>
+                    <progress value="60" max="100"></progress>
+
+                </section>
+
+            </div>
+
+        </section>
+
+        <section id="form-section">
+
+            <h3 id="form-title">Besoin d'une <strong class="Highlight">solution informatique</strong> à vos projets ? <br> Faites-moi savoir !</h3>
+            <form action="#" id="contact-form" class="form">
+                <div>
+                    <label for="fname" id="fname">Prénom :</label>
+                    <input type="text" id="fname" name="fname" placeholder="Toussaint">
+                    <small id="fnameMsg" style="color: red;"></small>
+                </div>
+                <div>
+                    <label for="lname" id="lname">Nom :</label>
+                    <input type="text" id="lname" name="lname" placeholder="Louverture">
+                    <small id="lnameMsg" style="color: red;"></small>
+                </div>
+                <div>
+                    <label for="mail" id="mail">E-mail :</label>
+                    <input type="email" id="mail" name="mail" placeholder="toussaint.louverture@gmail.com">
+                    <small id="mailMsg" style="color:red;"></small>
+                </div>
+                    <label for="txt-obj">Objet :</label>
+                    <input type="text" name="txt-obj" id="txt-obj"></textarea>
+                    <small id="objMsg" style="color: red;"></small>
+                </div>
+                <div>
+                    <label for="txt-msg">Votre message : </label>
+                    <textarea name="txt-msg" id="txt-msg" placeholder="Votre message ici ..."></textarea>
+                </div>
+                <div>
+                    <button type="submit">Envoyer</button>
+                </div>
+
+
+            </form>
+        </section>
+
+    </main>
+
+
+    <footer id="mainFooter">
+        <p>Design by <strong class="Highlight">Kevens Marly</strong> with HTML, CSS, Js</p>
+        <p>&copy; Tous droits réservés | 2025</p>
+    </footer>
+</body>
+</html>
